@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calucé Senior Living - Cuidado de Lujo</title>
+    <meta name="description" content="La tranquilidad del cuidado de lujo para el adulto mayor en Calucé. Agende su visita a nuestras sedes exclusivas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Caluce_senior_living_logo_x2.png" alt="Calucé Senior Living Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('Gemini_Generated_Image_povp9ypovp9ypovp.png');"></div>
+                <div class="hero-slide" style="background-image: url('hero_img_new.png');"></div>
+                <div class="hero-slide" style="background-image: url('hero_img_1.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('hero_img_2.jpg');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-text-area">
+                    <h1 class="hero-title">La tranquilidad de un<span class="luxury-highlight">cuidado de lujo</span>comienza aquí</h1>
+                </div>
+                
+                <div class="hero-form-area">
+                    <div class="form-card">
+                        <h2 class="form-subtitle">Agenda tu visita hoy</h2>
+                        
+                        <form id="contact-form" class="lead-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="celular">Celular</label>
+                                    <input type="tel" id="celular" name="celular" required placeholder="Ej. 300 123 4567">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="para_quien">¿Para quién busca la residencia?</label>
+                                <select id="para_quien" name="para_quien" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Familiar">Familiar</option>
+                                    <option value="Para mi">Para mí</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sede">¿Cuál de nuestras sedes en Bogotá te interesa visitar?</label>
+                                <select id="sede" name="sede" required>
+                                    <option value="" disabled selected>Seleccione una sede</option>
+                                    <option value="Chia">Chía desde $8.500.000</option>
+                                    <option value="Lindaraja">Lindaraja desde $9.500.000</option>
+                                    <option value="103">103 desde $10.500.000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cuidado">¿Necesita algún cuidado especializado?</label>
+                                <select id="cuidado" name="cuidado" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Ninguno">Ninguno</option>
+                                    <option value="Movilidad reducida">Movilidad reducida</option>
+                                    <option value="Problema cognitivo">Problema cognitivo</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            
+
+                            
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="politica" name="politica" required>
+                                <label for="politica">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span>AGENDAR UNA VISITA</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-container" style="justify-content: center;">
+                <h2 class="cta-text">Planes de vivienda asistida en Bogotá desde <span class="cta-price">$8.500.000</span></h2>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="video-container-wrapper">
+                <div class="video-column">
+                    <h3 class="video-preview-title">Mira este video recorrido</h3>
+                    <div class="video-box">
+                        <img src="video_thumbnail.jpg" alt="Video recorrido Calucé" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" aria-label="Reproducir video">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="video-text">
+                    <h2 class="section-title">ELIGE LA TRANQUILIDAD</h2>
+                    <p class="section-description">de contar con el respaldo de <span class="highlight-text">más de 50 años</span> de experiencia en el cuidado del adulto mayor</p>
+                    <button class="cta-btn" style="margin-top: 2rem;" onclick="openFormModal()">AGENDA UNA VISITA</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Lo que dicen nuestras familias y residentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px;">
+                        <img src="testimonial_1.jpg" alt="Testimonio de Residente" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Encontrar Calucé fue un alivio para toda la familia. El cuidado, la empatía y la atención son inmejorables."</p>
+                        <h4 class="testimonial-name">María Isabel, Residente</h4>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px;">
+                        <img src="testimonial_2.jpg" alt="Testimonio de Familiar" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Saber que mi papá está en las mejores manos y rodeado de naturaleza me da una paz inmensa todos los días."</p>
+                        <h4 class="testimonial-name">Carlos A., Familiar</h4>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px;">
+                        <img src="testimonial_3.jpg" alt="Testimonio de Residente" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Aquí encontramos una nueva comunidad, amigos para compartir y un servicio de enfermería excelente."</p>
+                        <h4 class="testimonial-name">Familia Rodríguez</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sedes-section">
+            <div class="services-header">
+                <h2 class="services-main-title">¿Cuál de nuestras sedes en Bogotá te interesa visitar?</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="sedes-grid">
+                <!-- Card Chia -->
+                <div class="sede-card">
+                    <div class="sede-img-box">
+                        <img src="IMG_2780.jpg" alt="Sede Chía" class="sede-img">
+                    </div>
+                    <div class="sede-info">
+                        <h3 class="sede-title">Sede Chía</h3>
+                        <p class="sede-details">Avenida Pradilla Diagonal 13 – 3 Este 98<br>
+                            <span class="phone-line">
+                                <svg class="phone-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                (+57) 310 564 99 05
+                            </span>
+                        </p>
+                        <p class="sede-price">Planes desde <strong>$8.500.000</strong></p>
+                        <button class="cta-btn sede-btn" onclick="openFormModal('Chia')">AGENDA TU VISITA</button>
+                    </div>
+                </div>
+                
+                <!-- Card Lindaraja -->
+                <div class="sede-card">
+                    <div class="sede-img-box">
+                        <img src="editable_edificio.jpg" alt="Sede Lindaraja" class="sede-img">
+                    </div>
+                    <div class="sede-info">
+                        <h3 class="sede-title">Sede Lindaraja</h3>
+                        <p class="sede-details">Carrera 78 #127d – 60<br>
+                            <span class="phone-line">
+                                <svg class="phone-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                (+57) 322 271 79 11
+                            </span>
+                        </p>
+                        <p class="sede-price">Planes desde <strong>$9.500.000</strong></p>
+                        <button class="cta-btn sede-btn" onclick="openFormModal('Lindaraja')">AGENDA TU VISITA</button>
+                    </div>
+                </div>
+                
+                <!-- Card 103 -->
+                <div class="sede-card">
+                    <div class="sede-img-box">
+                        <img src="20210810_181225.jpg" alt="Sede 103" class="sede-img">
+                    </div>
+                    <div class="sede-info">
+                        <h3 class="sede-title">Sede 103</h3>
+                        <p class="sede-details">Carrera 16 # 103 – 50<br>
+                            <span class="phone-line">
+                                <svg class="phone-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                (+57) 310 211 8617
+                            </span>
+                        </p>
+                        <p class="sede-price">Planes desde <strong>$10.500.000</strong></p>
+                        <button class="cta-btn sede-btn" onclick="openFormModal('103')">AGENDA TU VISITA</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Lo que incluye nuestro plan de residencia asistida</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <h3 class="card-title">Cuidados y Salud</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Evaluación inicial de ingreso</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Seguimiento periódico al nivel de cuidado requerido</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Coordinación de asistencia médica 24h</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Cuidados básicos de enfermería (signos vitales, glucometrías, oximetrías)</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Control de peso y talla</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Administración de medicamentos formulados</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Rondas nocturnas</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <h3 class="card-title">Bienestar y Rutina</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dietas acordes a las condiciones de salud y comorbilidades</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervisión de actividades básicas de la vida diaria</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervisión y seguimiento de riesgos</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Actividades sociales, espirituales, lúdicas y culturales</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Visitas con horarios flexibles</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <h3 class="card-title">Comodidades y Seguridad</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Servicios públicos, Wi-Fi y televisión por cable</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Servicio de llamada de emergencia</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Aseo diario y mantenimiento general de la habitación</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Lavandería de ropa personal</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Vigilancia y seguridad privada 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Preguntas Frecuentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué tipos de cuidados ofrecen?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos cuidados básicos de enfermería, seguimiento de signos vitales, administración de medicamentos, apoyo en actividades básicas de la vida diaria y asistencia especializada según las necesidades de cada huésped.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Se permiten visitas de familiares?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, promovemos activamente el vínculo familiar. Contamos con horarios de visita flexibles para que los familiares puedan compartir tiempo de calidad con sus seres queridos en un ambiente cómodo y seguro.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Tienen planes de alimentación especial?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Totalmente. Nuestro equipo de nutrición diseña dietas personalizadas acordes a las condiciones de salud, comorbilidades y requerimientos específicos de cada uno de nuestros huéspedes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-locations">CHÍA &middot; LINDARAJA &middot; BOGOTÁ 103</div>
+            <div class="footer-legal">
+                &copy; 2026 Calucé. Todos los derechos reservados. | <a href="#" onclick="openPolicyModal(event)">Política de tratamiento de datos</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <button class="fab-btn" onclick="openFormModal()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            AGENDA TU VISITA
+        </button>
+    </div>
+
+    <!-- Form Modal -->
+    <div id="form-modal" class="modal">
+        <div class="modal-content" style="max-width: 500px; padding: 2rem; height: auto;">
+            <span class="close-modal" id="close-form-modal">&times;</span>
+            <div class="form-card" style="box-shadow: none; padding: 0; background: transparent;">
+                <h2 class="form-subtitle">Agenda tu visita hoy</h2>
+                
+                <form id="popup-contact-form" class="lead-form">
+                    <div class="form-group">
+                        <label for="nombre-popup">Nombre completo</label>
+                        <input type="text" id="nombre-popup" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="celular-popup">Celular</label>
+                            <input type="tel" id="celular-popup" name="celular" required placeholder="Ej. 300 123 4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email-popup">Email</label>
+                            <input type="email" id="email-popup" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="para_quien-popup">¿Para quién busca la residencia?</label>
+                        <select id="para_quien-popup" name="para_quien" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Familiar">Familiar</option>
+                            <option value="Para mi">Para mí</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sede-popup">¿Cuál de nuestras sedes en Bogotá te interesa visitar?</label>
+                        <select id="sede-popup" name="sede" required>
+                            <option value="" disabled selected>Seleccione una sede</option>
+                            <option value="Chia">Chía desde $8.500.000</option>
+                            <option value="Lindaraja">Lindaraja desde $9.500.000</option>
+                            <option value="103">103 desde $10.500.000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cuidado-popup">¿Necesita algún cuidado especializado?</label>
+                        <select id="cuidado-popup" name="cuidado" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Ninguno">Ninguno</option>
+                            <option value="Movilidad reducida">Movilidad reducida</option>
+                            <option value="Problema cognitivo">Problema cognitivo</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="politica-popup" name="politica" required>
+                        <label for="politica-popup">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>AGENDAR UNA VISITA</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
