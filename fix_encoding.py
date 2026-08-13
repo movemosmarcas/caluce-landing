@@ -9,8 +9,8 @@ def fix_file(filepath):
         if content.startswith('\ufeff'):
             content = content[1:]
             
-        # Reverse the cp1252 double encoding
-        fixed_content = content.encode('cp1252').decode('utf-8')
+        # Reverse the encoding using latin-1 which maps 1:1 to bytes
+        fixed_content = content.encode('latin-1').decode('utf-8')
         
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(fixed_content)
