@@ -1,8 +1,8 @@
 :root {
     /* Premium Color Palette */
     --primary-color: #1a2c42; /* Deep elegant navy */
-    --secondary-color: #c9a56c; /* Soft sophisticated gold */
-    --secondary-hover: #b5925a;
+    --secondary-color: #d3d800; /* Bright green */
+    --secondary-hover: #b8bd00;
     --text-dark: #2a3342;
     --text-light: #ffffff;
     --text-muted: #5e6b7e;
@@ -987,7 +987,7 @@ body {
 .fab-btn:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 35px rgba(0,0,0,0.25);
-    background-color: #a48f5a;
+    background-color: #b8bd00;
 }
 
 /* Thank You Page */
