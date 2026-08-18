@@ -1256,3 +1256,37 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* Video Modal Styles */
+.video-modal-content {
+    max-width: 900px;
+    width: 95%;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#close-video-modal {
+    color: #fff;
+    right: 0;
+    top: -40px;
+}

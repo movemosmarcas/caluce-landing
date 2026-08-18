@@ -102,7 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const modal = btn.closest('.modal');
             if(modal) {
                 modal.classList.remove('show');
-                setTimeout(() => modal.style.display = "none", 300);
+                setTimeout(() => {
+                    modal.style.display = "none";
+                    if (modal.id === 'video-modal') {
+                        document.getElementById('youtube-iframe').src = "";
+                    }
+                }, 300);
             }
         }
     });
@@ -110,9 +115,30 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onclick = function(event) {
         if (event.target.classList.contains('modal')) {
             event.target.classList.remove('show');
-            setTimeout(() => event.target.style.display = "none", 300);
+            setTimeout(() => {
+                event.target.style.display = "none";
+                if (event.target.id === 'video-modal') {
+                    document.getElementById('youtube-iframe').src = "";
+                }
+            }, 300);
         }
     }
+    
+    // Video Modal Open Logic
+    window.openVideoModal = function(youtubeId) {
+        if (!youtubeId) {
+            alert("Video próximamente disponible");
+            return;
+        }
+        const videoModal = document.getElementById('video-modal');
+        const iframe = document.getElementById('youtube-iframe');
+        
+        if(videoModal && iframe) {
+            iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
+            videoModal.style.display = "flex";
+            setTimeout(() => videoModal.classList.add('show'), 10);
+        }
+    };
 
     // Hero Slideshow
     const slides = document.querySelectorAll('.hero-slide');
