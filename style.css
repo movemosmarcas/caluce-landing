@@ -745,7 +745,7 @@ body {
 .testimonial-name {
     font-family: var(--font-body);
     font-size: 0.95rem;
-    color: var(--secondary-color);
+    color: #036731;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
