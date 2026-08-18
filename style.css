@@ -231,7 +231,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-.form-group input,
+.form-group input:not([type="checkbox"]),
 .form-group select {
     width: 100%;
     padding: 0.8rem 1rem;
@@ -254,14 +254,14 @@ body {
     padding-right: 2.5rem;
 }
 
-.form-group input:focus,
+.form-group input:not([type="checkbox"]):focus,
 .form-group select:focus {
     border-color: var(--secondary-color);
     background: #ffffff;
     box-shadow: 0 0 0 3px rgba(201, 165, 108, 0.15);
 }
 
-.form-group input::placeholder {
+.form-group input:not([type="checkbox"])::placeholder {
     color: #a0aec0;
 }
 
