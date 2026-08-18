@@ -182,7 +182,7 @@ body {
 
 .form-subtitle {
     font-family: var(--font-heading);
-    color: #244c36; /* Matching the elegant forest green */
+    color: #036731; /* Matching the elegant forest green */
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
@@ -360,7 +360,7 @@ body {
 
 /* CTA Banner */
 .cta-banner {
-    background-color: #244c36; /* Brand green */
+    background-color: #036731; /* Brand green */
     width: 100%;
     padding: 1.8rem 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -439,9 +439,9 @@ body {
 
 .video-preview-title {
     font-family: var(--font-heading);
-    color: #244c36;
+    color: #036731;
     background-color: #e8f5ec;
-    border-left: 4px solid #244c36;
+    border-left: 4px solid #036731;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 1rem 1.5rem;
@@ -516,7 +516,7 @@ body {
 
 .section-title {
     font-family: var(--font-heading);
-    color: #244c36; /* Brand green */
+    color: #036731; /* Brand green */
     font-size: 3.5rem;
     line-height: 1.2;
     font-weight: 600;
@@ -583,7 +583,7 @@ body {
 
 .sede-title {
     font-family: var(--font-heading);
-    color: #244c36;
+    color: #036731;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
@@ -636,7 +636,7 @@ body {
 
 .services-main-title {
     font-family: var(--font-heading);
-    color: #244c36;
+    color: #036731;
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -677,7 +677,7 @@ body {
 
 .card-title {
     font-family: var(--font-heading);
-    color: #244c36;
+    color: #036731;
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 600;
@@ -700,7 +700,7 @@ body {
 }
 
 .service-list li svg {
-    color: #4a7c59;
+    color: #036731;
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -801,11 +801,11 @@ body {
 }
 
 .faq-question:hover {
-    color: #4a7c59;
+    color: #036731;
 }
 
 .faq-icon {
-    color: #4a7c59;
+    color: #036731;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -917,7 +917,7 @@ body {
 
 /* Footer Section */
 .footer {
-    background-color: #1a3626;
+    background-color: #036731;
     padding: 3.5rem 2rem;
     text-align: center;
 }
@@ -1290,3 +1290,4 @@ body {
     right: 0;
     top: -40px;
 }
+
