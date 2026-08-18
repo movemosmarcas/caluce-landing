@@ -82,13 +82,24 @@
                             
                             <div class="form-group">
                                 <label for="servicio">¿Cuál de nuestros servicios te interesa?</label>
-                                <select id="servicio" name="servicio" required>
-                                    <option value="" disabled selected>Seleccione una opción</option>
-                                    <option value="Residencia Permanente">Residencia Permanente</option>
-                                    <option value="Estancia Temporal">Estancia Temporal</option>
-                                    <option value="Club Día">Club Día</option>
-                                    <option value="Recuperación poshospitalaria">Recuperación poshospitalaria</option>
-                                </select>
+                                <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-residencia" name="servicio[]" value="Residencia Permanente">
+                                        <label for="srv-residencia" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Residencia Permanente</label>
+                                    </div>
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-temporal" name="servicio[]" value="Estancia Temporal">
+                                        <label for="srv-temporal" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Estancia Temporal</label>
+                                    </div>
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-club" name="servicio[]" value="Club Día">
+                                        <label for="srv-club" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Club Día</label>
+                                    </div>
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-recuperacion" name="servicio[]" value="Recuperación poshospitalaria">
+                                        <label for="srv-recuperacion" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación poshospitalaria</label>
+                                    </div>
+                                </div>
                             </div>
                             
 
@@ -344,7 +355,7 @@
                         <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Ofrecemos cuidados básicos de enfermería, seguimiento de signos vitales, administración de medicamentos, apoyo en actividades básicas de la vida diaria y asistencia especializada según las necesidades de cada huésped.</p>
+                        <p>Ofrecemos cuidados básicos de enfermería, seguimiento de signos vitales, administración de medicamentos, apoyo en actividades básicas de la vida diaria y asistencia especializada según las necesidades de cada residente.</p>
                     </div>
                 </div>
                 
@@ -451,13 +462,24 @@
                     
                     <div class="form-group">
                         <label for="servicio-popup">¿Cuál de nuestros servicios te interesa?</label>
-                        <select id="servicio-popup" name="servicio" required>
-                            <option value="" disabled selected>Seleccione una opción</option>
-                            <option value="Residencia Permanente">Residencia Permanente</option>
-                            <option value="Estancia Temporal">Estancia Temporal</option>
-                            <option value="Club Día">Club Día</option>
-                            <option value="Recuperación poshospitalaria">Recuperación poshospitalaria</option>
-                        </select>
+                        <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-residencia-popup" name="servicio[]" value="Residencia Permanente">
+                                <label for="srv-residencia-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Residencia Permanente</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-temporal-popup" name="servicio[]" value="Estancia Temporal">
+                                <label for="srv-temporal-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Estancia Temporal</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-club-popup" name="servicio[]" value="Club Día">
+                                <label for="srv-club-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Club Día</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-recuperacion-popup" name="servicio[]" value="Recuperación poshospitalaria">
+                                <label for="srv-recuperacion-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación poshospitalaria</label>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="form-checkbox">
