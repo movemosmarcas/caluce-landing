@@ -394,6 +394,35 @@ body {
     font-size: 1.1em;
 }
 
+.btn-whatsapp-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-whatsapp-cta:hover {
+    background-color: var(--secondary-color);
+    color: #036731;
+}
+
+@media (max-width: 768px) {
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
+
 .cta-btn {
     background-color: var(--secondary-color);
     color: var(--primary-color);
