@@ -6,23 +6,52 @@ document.addEventListener('DOMContentLoaded', () => {
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
-                // Gather form data
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData.entries());
-                
-                // In a real application, you would send this to your backend
-                console.log('Formulario enviado:', data);
-                
-                // Visual feedback
                 const btn = form.querySelector('.submit-btn');
                 const originalText = btn.innerHTML;
                 
-                btn.innerHTML = '<span>¡ENVIADO CORRECTAMENTE!</span>';
-                btn.style.backgroundColor = '#2ecc71';
+                btn.innerHTML = '<span>ENVIANDO...</span>';
+                btn.disabled = true;
                 
-                setTimeout(() => {
-                    window.location.href = 'gracias.html';
-                }, 800);
+                const rawFormData = new FormData(form);
+                const formData = new FormData();
+                
+                formData.append('nombre', rawFormData.get('nombre') || '');
+                formData.append('celular', rawFormData.get('celular') || '');
+                formData.append('email', rawFormData.get('email') || '');
+                formData.append('para_quien', rawFormData.get('para_quien') || '');
+                formData.append('sede', rawFormData.get('sede') || '');
+                
+                // Unir múltiples servicios con coma si eligen varios
+                const servicios = rawFormData.getAll('servicio[]');
+                formData.append('servicio', servicios.join(', '));
+                
+                // Mapear 'politica' a 'datos' como espera el Apps Script
+                const politica = rawFormData.get('politica') ? 'Sí' : 'No';
+                formData.append('datos', politica);
+                
+                fetch('https://script.google.com/macros/s/AKfycbwBphsw5kE1mrfONaVjvc9A0cIYy4-KNESLC9ze1eICAAZx284SrCBdjxTGVS4DfkWznQ/exec', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    btn.innerHTML = '<span>¡ENVIADO CORRECTAMENTE!</span>';
+                    btn.style.backgroundColor = '#2ecc71';
+                    
+                    setTimeout(() => {
+                        window.location.href = 'gracias.html';
+                    }, 800);
+                })
+                .catch(error => {
+                    console.error('Error al enviar el formulario:', error);
+                    btn.innerHTML = '<span>ERROR, INTENTA DE NUEVO</span>';
+                    btn.style.backgroundColor = '#e74c3c';
+                    btn.disabled = false;
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.style.backgroundColor = '';
+                    }, 3000);
+                });
             });
         }
     });
