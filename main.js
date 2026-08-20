@@ -29,10 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const politica = rawFormData.get('politica') ? 'Sí' : 'No';
                 formData.append('datos', politica);
                 
+                const params = new URLSearchParams();
+                for (const pair of formData.entries()) {
+                    params.append(pair[0], pair[1]);
+                }
+                
                 fetch('https://script.google.com/macros/s/AKfycbwBphsw5kE1mrfONaVjvc9A0cIYy4-KNESLC9ze1eICAAZx284SrCBdjxTGVS4DfkWznQ/exec', {
                     method: 'POST',
                     mode: 'no-cors',
-                    body: formData
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: params
                 })
                 .then(response => {
                     btn.innerHTML = '<span>¡ENVIADO CORRECTAMENTE!</span>';
