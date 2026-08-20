@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 fetch('https://script.google.com/macros/s/AKfycbwBphsw5kE1mrfONaVjvc9A0cIYy4-KNESLC9ze1eICAAZx284SrCBdjxTGVS4DfkWznQ/exec', {
                     method: 'POST',
+                    mode: 'no-cors',
                     body: formData
                 })
                 .then(response => {
