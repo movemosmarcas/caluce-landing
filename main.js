@@ -29,6 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const politica = rawFormData.get('politica') ? 'Sí' : 'No';
                 formData.append('datos', politica);
                 
+                // --- NUEVO: CAPTURAR UTMS Y DATOS DE ORIGEN ---
+                const urlParams = new URLSearchParams(window.location.search);
+                formData.append('fuente_lead', 'Landing Page Caluce');
+                formData.append('utm_source', urlParams.get('utm_source') || '');
+                formData.append('utm_medium', urlParams.get('utm_medium') || '');
+                formData.append('utm_campaign', urlParams.get('utm_campaign') || '');
+                formData.append('utm_content', urlParams.get('utm_content') || '');
+                formData.append('utm_term', urlParams.get('utm_term') || '');
+                formData.append('url_origen', window.location.href);
+                
                 const params = new URLSearchParams();
                 for (const pair of formData.entries()) {
                     params.append(pair[0], pair[1]);
