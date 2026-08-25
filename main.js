@@ -6,13 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
+                const rawFormData = new FormData(form);
+                const servicios = rawFormData.getAll('servicio[]');
+                
+                if (servicios.length === 0) {
+                    alert('Por favor, selecciona al menos un servicio de interés.');
+                    return;
+                }
+                
                 const btn = form.querySelector('.submit-btn');
                 const originalText = btn.innerHTML;
                 
                 btn.innerHTML = '<span>ENVIANDO...</span>';
                 btn.disabled = true;
                 
-                const rawFormData = new FormData(form);
                 const formData = new FormData();
                 
                 formData.append('nombre', rawFormData.get('nombre') || '');
@@ -22,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 formData.append('sede', rawFormData.get('sede') || '');
                 
                 // Unir múltiples servicios con coma si eligen varios
-                const servicios = rawFormData.getAll('servicio[]');
                 formData.append('servicio', servicios.join(', '));
                 
                 // Mapear 'politica' a 'datos' como espera el Apps Script
