@@ -360,10 +360,9 @@ body {
 
 /* CTA Banner */
 .cta-banner {
-    background-color: #036731; /* Brand green */
+    background-color: #ffffff;
     width: 100%;
     padding: 1.8rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     position: relative;
     z-index: 10;
 }
@@ -373,6 +372,7 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -380,7 +380,7 @@ body {
 
 .cta-text {
     font-family: var(--font-heading);
-    color: var(--text-light);
+    color: #517658;
     font-size: 2rem;
     font-weight: 500;
     margin: 0;
@@ -388,7 +388,7 @@ body {
 }
 
 .cta-price {
-    color: var(--secondary-color);
+    color: #3b5f42;
     font-weight: 700;
     font-style: italic;
     font-size: 1.1em;
@@ -398,9 +398,9 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    background-color: transparent;
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    background-color: #65d56f;
+    border: none;
+    color: #ffffff;
     padding: 0.7rem 1.5rem;
     border-radius: 8px;
     font-family: var(--font-body);
@@ -411,8 +411,8 @@ body {
 }
 
 .btn-whatsapp-cta:hover {
-    background-color: var(--secondary-color);
-    color: #036731;
+    background-color: #52c25c;
+    color: #ffffff;
 }
 
 @media (max-width: 768px) {
