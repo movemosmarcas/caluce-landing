@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 
                 const rawFormData = new FormData(form);
+                const servicios = rawFormData.getAll('servicio[]');
                 
                 const btn = form.querySelector('.submit-btn');
                 const originalText = btn.innerHTML;
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 formData.append('email', rawFormData.get('email') || '');
                 formData.append('para_quien', 'No especificado');
                 formData.append('sede', rawFormData.get('sede') || '');
-                formData.append('servicio', 'No especificado');
+                formData.append('servicio', servicios.length > 0 ? servicios.join(', ') : 'No especificado');
                 
                 // Mapear 'politica' a 'datos' como espera el Apps Script
                 const politica = rawFormData.get('politica') ? 'Sí' : 'No';
