@@ -7,12 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.preventDefault();
                 
                 const rawFormData = new FormData(form);
-                const servicios = rawFormData.getAll('servicio[]');
-                
-                if (servicios.length === 0) {
-                    alert('Por favor, selecciona al menos un servicio de interés.');
-                    return;
-                }
                 
                 const btn = form.querySelector('.submit-btn');
                 const originalText = btn.innerHTML;
@@ -25,11 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 formData.append('nombre', rawFormData.get('nombre') || '');
                 formData.append('celular', rawFormData.get('celular') || '');
                 formData.append('email', rawFormData.get('email') || '');
-                formData.append('para_quien', rawFormData.get('para_quien') || '');
+                formData.append('para_quien', 'No especificado');
                 formData.append('sede', rawFormData.get('sede') || '');
-                
-                // Unir múltiples servicios con coma si eligen varios
-                formData.append('servicio', servicios.join(', '));
+                formData.append('servicio', 'No especificado');
                 
                 // Mapear 'politica' a 'datos' como espera el Apps Script
                 const politica = rawFormData.get('politica') ? 'Sí' : 'No';
