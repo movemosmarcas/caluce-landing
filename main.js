@@ -120,8 +120,15 @@ window.openFormModal = function(sedeValue = null) {
     }
 };
 
-
-
+// WhatsApp Modal logic
+window.openWaModal = function(event) {
+    if (event) event.preventDefault();
+    const waModal = document.getElementById('wa-modal');
+    if(waModal) {
+        waModal.style.display = "flex";
+        setTimeout(() => waModal.classList.add('show'), 10);
+    }
+};
 // FAQ Accordion Logic
 document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
