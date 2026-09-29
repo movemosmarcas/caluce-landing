@@ -46,8 +46,8 @@
             <div class="hero-overlay"></div>
             
             <div class="hero-content">
-                <div class="hero-text-area">
-                    <h1 class="hero-title">Residencias <span class="luxury-highlight">con cuidado profesional</span> para el adulto mayor</h1>
+                <div class="hero-text-area" style="text-align: center; margin: 0 auto; max-width: 800px; display: flex; flex-direction: column; align-items: center;">
+                    <h1 class="hero-title" style="max-width: 100%; text-align: center;">Residencias <span class="luxury-highlight">con cuidado profesional</span> para el adulto mayor</h1>
                     <a href="javascript:void(0)" onclick="openWaModal(event)" class="btn-whatsapp-cta" style="margin-top: 1.5rem; display: inline-flex;">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -55,89 +55,101 @@
                         Escríbenos por WhatsApp
                     </a>
                 </div>
-                
-                <div class="hero-form-area">
-                    <div class="form-card">
-                        <h2 class="form-subtitle">Solicita información hoy</h2>
-                        
-                        <form id="contact-form" class="lead-form">
-                            <div class="form-group">
-                                <label for="nombre">Nombre completo</label>
-                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="celular">Celular</label>
-                                    <input type="tel" id="celular" name="celular" required placeholder="Ej. 300 123 4567">
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="sede">¿Cuál de nuestras sedes te interesa?</label>
-                                <select id="sede" name="sede" required>
-                                    <option value="" disabled selected>Seleccione una sede</option>
-                                    <option value="Chia">Sede Chía</option>
-                                    <option value="Lindaraja">Sede Lindaraja</option>
-                                    <option value="103">Sede 103</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="servicio">¿Cuál de nuestros servicios te interesa?</label>
-                                <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
-                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
-                                        <input type="checkbox" id="srv-residencia" name="servicio[]" value="Residencia Permanente">
-                                        <label for="srv-residencia" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Residencia Permanente</label>
-                                    </div>
-                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
-                                        <input type="checkbox" id="srv-temporal" name="servicio[]" value="Estancia Temporal">
-                                        <label for="srv-temporal" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Estancia Temporal</label>
-                                    </div>
-                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
-                                        <input type="checkbox" id="srv-club" name="servicio[]" value="Club Día">
-                                        <label for="srv-club" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Club Día</label>
-                                    </div>
-                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
-                                        <input type="checkbox" id="srv-recuperacion" name="servicio[]" value="Recuperación poshospitalaria">
-                                        <label for="srv-recuperacion" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación poshospitalaria</label>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #c8d4c1;">
-                            <div class="form-checkbox">
-                                <input type="checkbox" id="politica" name="politica" required>
-                                <label for="politica">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
-                            </div>
-                            
-                            <button type="submit" class="submit-btn">
-                                <span>SOLICITAR INFORMACIÓN</span>
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section class="cta-banner">
-            <div class="cta-container">
-                <h2 class="cta-text">Planes de vivienda asistida desde <span class="cta-price">$9.826.000</span></h2>
-                <a href="javascript:void(0)" onclick="openWaModal(event)" class="btn-whatsapp-cta">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                    </svg>
-                    Agenda tu visita
-                </a>
+        <section class="pricing-form-section" style="position: relative; background-image: url('editable_edificio.webp'); background-size: cover; background-position: center; padding: 6rem 2rem; background-attachment: fixed;">
+            <div style="position: absolute; inset: 0; background-color: rgba(248, 246, 240, 0.88);"></div>
+            <div style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 3rem;">
+                
+                <h2 style="font-family: var(--font-heading); color: var(--primary-color); font-size: 2.6rem; text-align: center; font-weight: 600;">Residencias para el adulto mayor desde</h2>
+                
+                <!-- Pricing Card -->
+                <div style="background: #ffffff; border-radius: 16px; padding: 2.5rem 2rem; width: 100%; max-width: 800px; box-shadow: 0 15px 40px rgba(0,0,0,0.08); display: flex; justify-content: space-between; text-align: center; gap: 1rem; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 200px; border-right: 1px solid #eaeaea; display: flex; flex-direction: column; justify-content: center; padding: 0 1rem;">
+                        <p style="font-weight: 600; font-size: 0.95rem; color: #1a2c42; margin-bottom: 0.8rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><img src="https://flagcdn.com/w20/co.png" alt="COP" style="width: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"> COP</p>
+                        <p style="font-size: 2.2rem; font-weight: 700; color: #1a2c42; font-family: var(--font-heading);">$ 9.826.000*</p>
+                    </div>
+                    <div style="flex: 1; min-width: 200px; border-right: 1px solid #eaeaea; display: flex; flex-direction: column; justify-content: center; padding: 0 1rem;">
+                        <p style="font-weight: 600; font-size: 0.95rem; color: #1a2c42; margin-bottom: 0.8rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><img src="https://flagcdn.com/w20/us.png" alt="USD" style="width: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"> USD</p>
+                        <p style="font-size: 1.8rem; font-weight: 700; color: #1a2c42; font-family: var(--font-heading);">USD 2.450</p>
+                        <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">*TRM aprox: $ 4.010</p>
+                    </div>
+                    <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; justify-content: center; padding: 0 1rem;">
+                        <p style="font-weight: 600; font-size: 0.95rem; color: #1a2c42; margin-bottom: 0.8rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><img src="https://flagcdn.com/w20/eu.png" alt="EUR" style="width: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.2);"> EUR</p>
+                        <p style="font-size: 1.8rem; font-weight: 700; color: #1a2c42; font-family: var(--font-heading);">€ 2.230</p>
+                        <p style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">*Tasa aprox: $ 4.400</p>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="form-card" style="width: 100%; max-width: 600px; background: #ffffff; border: none; box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+                    <h2 class="form-subtitle">Solicita información hoy</h2>
+                    
+                    <form id="contact-form" class="lead-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="celular">Celular</label>
+                                <input type="tel" id="celular" name="celular" required placeholder="Ej. 300 123 4567">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="sede">¿Cuál de nuestras sedes te interesa?</label>
+                            <select id="sede" name="sede" required>
+                                <option value="" disabled selected>Seleccione una sede</option>
+                                <option value="Chia">Sede Chía</option>
+                                <option value="Lindaraja">Sede Lindaraja</option>
+                                <option value="103">Sede 103</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servicio">¿Cuál de nuestros servicios te interesa?</label>
+                            <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                                <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                    <input type="checkbox" id="srv-residencia" name="servicio[]" value="Residencia Permanente">
+                                    <label for="srv-residencia" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Residencia Permanente</label>
+                                </div>
+                                <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                    <input type="checkbox" id="srv-temporal" name="servicio[]" value="Estancia Temporal">
+                                    <label for="srv-temporal" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Estancia Temporal</label>
+                                </div>
+                                <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                    <input type="checkbox" id="srv-club" name="servicio[]" value="Club Día">
+                                    <label for="srv-club" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Club Día</label>
+                                </div>
+                                <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                    <input type="checkbox" id="srv-recuperacion" name="servicio[]" value="Recuperación poshospitalaria">
+                                    <label for="srv-recuperacion" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación poshospitalaria</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #c8d4c1;">
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="politica" name="politica" required>
+                            <label for="politica">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" style="padding: 1.2rem; font-size: 1.05rem;">
+                            <span>SOLICITAR INFORMACIÓN</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
 
