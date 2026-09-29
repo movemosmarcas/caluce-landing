@@ -130,9 +130,8 @@ body {
     margin: 0 auto;
     padding: 2rem 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 4rem;
 }
 
 .hero-text-area {
@@ -145,13 +144,13 @@ body {
 }
 
 .centered-hero-text {
-    flex: none;
-    align-self: center;
+    width: 100%;
     margin: 35vh auto 0 auto;
     max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .centered-hero-text .hero-title {
