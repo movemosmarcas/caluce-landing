@@ -755,16 +755,20 @@ body {
 }
 
 .testimonials-grid {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
 }
 
 .testimonial-card {
     background: transparent;
     transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 320px;
+    max-width: 450px;
 }
 
 .testimonial-card:hover {
