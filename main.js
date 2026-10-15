@@ -109,12 +109,15 @@ window.openFormModal = function(sedeValue = null) {
         setTimeout(() => formModal.classList.add('show'), 10);
         
         if (sedeValue) {
-            const sedeSelect = document.getElementById('sede-popup');
-            if (sedeSelect) {
-                sedeSelect.value = sedeValue;
-                sedeSelect.style.transition = 'all 0.3s ease';
-                sedeSelect.style.boxShadow = '0 0 0 3px var(--secondary-color)';
-                setTimeout(() => sedeSelect.style.boxShadow = 'none', 2500);
+            const radio = formModal.querySelector(`input[name="sede"][value="${sedeValue}"]`);
+            if (radio) {
+                radio.checked = true;
+                const cardBox = radio.closest('.sede-option-card')?.querySelector('.sede-card-box');
+                if (cardBox) {
+                    cardBox.style.transition = 'all 0.3s ease';
+                    cardBox.style.boxShadow = '0 0 0 3px var(--secondary-color)';
+                    setTimeout(() => cardBox.style.boxShadow = '', 2500);
+                }
             }
         }
     }

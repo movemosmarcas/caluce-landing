@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -105,13 +105,41 @@
                         </div>
                         
                         <div class="form-group">
-                            <label for="sede">¿Cuál de nuestras sedes te interesa?</label>
-                            <select id="sede" name="sede" required>
-                                <option value="" disabled selected>Seleccione una sede</option>
-                                <option value="Chia">Sede Chía</option>
-                                <option value="Lindaraja">Sede Lindaraja</option>
-                                <option value="103">Sede 103</option>
-                            </select>
+                            <label style="margin-bottom: 0.35rem; font-weight: 600;">¿Cuál de nuestras sedes te interesa?</label>
+                            <div class="sede-selector-group">
+                                <label class="sede-option-card">
+                                    <input type="radio" name="sede" value="Chia" id="sede-chia" required>
+                                    <div class="sede-card-box">
+                                        <span class="sede-radio-custom"></span>
+                                        <div class="sede-option-info">
+                                            <span class="sede-option-name">Sede Chía</span>
+                                            <span class="sede-option-price">Desde <strong>$9.826.000</strong></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="sede-option-card">
+                                    <input type="radio" name="sede" value="Lindaraja" id="sede-lindaraja" required>
+                                    <div class="sede-card-box">
+                                        <span class="sede-radio-custom"></span>
+                                        <div class="sede-option-info">
+                                            <span class="sede-option-name">Sede Lindaraja</span>
+                                            <span class="sede-option-price">Desde <strong>$11.832.000</strong></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                                <label class="sede-option-card">
+                                    <input type="radio" name="sede" value="103" id="sede-103" required>
+                                    <div class="sede-card-box">
+                                        <span class="sede-radio-custom"></span>
+                                        <div class="sede-option-info">
+                                            <span class="sede-option-name">Sede 103</span>
+                                            <span class="sede-option-price">Desde <strong>$12.900.000</strong></span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
                         </div>
                         
                         <div class="form-group">
@@ -480,13 +508,41 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="sede-popup">¿Cuál de nuestras sedes te interesa?</label>
-                        <select id="sede-popup" name="sede" required>
-                            <option value="" disabled selected>Seleccione una sede</option>
-                            <option value="Chia">Sede Chía</option>
-                            <option value="Lindaraja">Sede Lindaraja</option>
-                            <option value="103">Sede 103</option>
-                        </select>
+                        <label style="margin-bottom: 0.35rem; font-weight: 600;">¿Cuál de nuestras sedes te interesa?</label>
+                        <div class="sede-selector-group">
+                            <label class="sede-option-card">
+                                <input type="radio" name="sede" value="Chia" id="sede-chia-popup" required>
+                                <div class="sede-card-box">
+                                    <span class="sede-radio-custom"></span>
+                                    <div class="sede-option-info">
+                                        <span class="sede-option-name">Sede Chía</span>
+                                        <span class="sede-option-price">Desde <strong>$9.826.000</strong></span>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="sede-option-card">
+                                <input type="radio" name="sede" value="Lindaraja" id="sede-lindaraja-popup" required>
+                                <div class="sede-card-box">
+                                    <span class="sede-radio-custom"></span>
+                                    <div class="sede-option-info">
+                                        <span class="sede-option-name">Sede Lindaraja</span>
+                                        <span class="sede-option-price">Desde <strong>$11.832.000</strong></span>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="sede-option-card">
+                                <input type="radio" name="sede" value="103" id="sede-103-popup" required>
+                                <div class="sede-card-box">
+                                    <span class="sede-radio-custom"></span>
+                                    <div class="sede-option-info">
+                                        <span class="sede-option-name">Sede 103</span>
+                                        <span class="sede-option-price">Desde <strong>$12.900.000</strong></span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
                     </div>
                     
                     <div class="form-group">
@@ -540,7 +596,7 @@
         </div>
     </div>
 
-    <script src="main.js?v=6"></script>
+    <script src="main.js?v=7"></script>
 </body>
 </html>
 <!-- Auto-deploy test -->
