@@ -76,7 +76,9 @@ body {
 }
 
 .hero-panel-left {
-    width: 45%;
+    width: 38%;
+    min-width: 380px;
+    max-width: 540px;
     min-height: 100vh;
     background: linear-gradient(165deg, #183323 0%, #224733 100%);
     border-right: 1px solid rgba(255, 255, 255, 0.12);
@@ -84,10 +86,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 4.5rem 5rem;
+    padding: 4rem 3.5rem;
     position: relative;
     z-index: 5;
     box-shadow: 15px 0 35px rgba(0, 0, 0, 0.18);
+    flex-shrink: 0;
 }
 
 .hero-logo-box {
@@ -155,10 +158,11 @@ body {
 }
 
 .hero-panel-right {
-    width: 55%;
+    flex: 1;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: #1a3324;
 }
 
 .hero-panel-right .hero-slideshow {
@@ -193,10 +197,10 @@ body {
 
 @keyframes panImage {
     0% {
-        transform: scale(1.08) translateX(-1.5%);
+        transform: scale(1.0);
     }
     100% {
-        transform: scale(1.08) translateX(1.5%);
+        transform: scale(1.04);
     }
 }
 
