@@ -1636,3 +1636,226 @@ body {
     top: -40px;
 }
 
+/* ==========================================================================
+   Policy & Legal Page Styles (politica.html)
+   ========================================================================== */
+.policy-page {
+    background-color: #f8f6f0;
+    min-height: 80vh;
+}
+
+.policy-header {
+    background-color: #1e382b;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.policy-header .logo-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.policy-header .logo {
+    height: 75px;
+    width: auto;
+}
+
+.policy-banner {
+    background: linear-gradient(135deg, #1e382b 0%, #294e3b 100%);
+    padding: 4.5rem 1.5rem 3.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.policy-banner-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.policy-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #d7e4c9;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.policy-back-link:hover {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+.policy-title {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.policy-banner .title-divider {
+    margin: 1.5rem auto 0;
+    background: #d3d800;
+    width: 70px;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.policy-content {
+    padding: 4rem 1.5rem 6rem;
+    background-color: #f8f6f0;
+}
+
+.policy-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 4rem 4.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(26, 44, 66, 0.06);
+    border: 1px solid rgba(26, 44, 66, 0.06);
+    color: #374151;
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.policy-container h2 {
+    font-family: var(--font-heading);
+    color: #1e382b;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2.8rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid #e5e7eb;
+    letter-spacing: 0.5px;
+}
+
+.policy-container h2:first-child {
+    margin-top: 0;
+}
+
+.policy-container p {
+    margin-bottom: 1.35rem;
+    color: #4b5563;
+    line-height: 1.85;
+    text-align: justify;
+}
+
+.policy-container ul {
+    margin: 1.2rem 0 1.8rem 1.5rem;
+    padding-left: 1rem;
+}
+
+.policy-container li {
+    margin-bottom: 0.75rem;
+    color: #4b5563;
+    line-height: 1.75;
+}
+
+.policy-container a {
+    color: #1e382b;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.policy-container a:hover {
+    color: #036731;
+}
+
+.policy-container strong {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #142a1e;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-locations {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #d7e4c9;
+}
+
+.footer-legal {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-legal a {
+    color: #d7e4c9;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .policy-banner {
+        padding: 3rem 1.25rem 2.5rem;
+    }
+
+    .policy-title {
+        font-size: 2rem;
+    }
+
+    .policy-content {
+        padding: 2rem 1rem 4rem;
+    }
+
+    .policy-container {
+        padding: 2.25rem 1.5rem;
+        border-radius: 12px;
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .policy-container h2 {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .policy-container p {
+        text-align: left;
+    }
+}
+
+
