@@ -95,8 +95,6 @@ h1, h2, h3 { font-family: var(--font-heading); line-height: 1.2; color: var(--na
 }
 .index-grid a:hover { border-color: var(--lime); transform: translateY(-3px); box-shadow: var(--shadow); }
 .index-grid span { font-family: var(--font-heading); font-size: 1.6rem; color: var(--lime-hover); }
-body:not(.is-unlocked) .is-locked-link { opacity: .55; }
-body:not(.is-unlocked) .is-locked-link span::after { content: " 🔒"; font-size: .9rem; }
 
 /* Razones */
 .reasons { padding: 24px 0 72px; }
@@ -127,7 +125,7 @@ body:not(.is-unlocked) .is-locked-link span::after { content: " 🔒"; font-size
 .reason-body > .fine { margin-bottom: 1.25rem; }
 .reason-ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
 
-/* Muro */
+/* Invitación a mitad del recorrido */
 .gate { background: var(--navy); color: var(--white); padding: 80px 0; position: relative; z-index: 2; }
 .gate-inner { max-width: 760px; text-align: center; }
 .gate-progress { height: 6px; background: rgba(255,255,255,.15); border-radius: 99px; margin: 0 auto 1.5rem; max-width: 320px; overflow: hidden; }
@@ -139,12 +137,7 @@ body:not(.is-unlocked) .is-locked-link span::after { content: " 🔒"; font-size
 .gate-alt a { color: var(--lime); }
 .gate.is-done .gate-form, .gate.is-done .gate-alt, .gate.is-done .gate-lead { display: none; }
 
-.reasons-locked { position: relative; }
-body:not(.is-unlocked) .reasons-locked { max-height: 720px; overflow: hidden; }
-body:not(.is-unlocked) .reasons-locked .wrap { filter: blur(7px); pointer-events: none; user-select: none; }
-body:not(.is-unlocked) .reasons-locked::after {
-    content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(248,246,240,0) 0%, var(--cream) 85%);
-}
+.reasons-second { padding-top: 24px; }
 
 /* Comparativa */
 .compare { padding: 96px 0; background: var(--sand); }
