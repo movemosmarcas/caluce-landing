@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="compara.css?v=1">
+    <link rel="stylesheet" href="compara.css?v=2">
 </head>
 <body>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3RSPCSP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -67,11 +67,11 @@
                     <li><a href="#razon-3"><span>03</span>Espacios con calidez de hotel</a></li>
                     <li><a href="#razon-4"><span>04</span>Tres sedes en Bogotá y Chía</a></li>
                     <li><a href="#razon-5"><span>05</span>Vive con tus cosas</a></li>
-                    <li><a href="#razon-6" class="is-locked-link"><span>06</span>Alimentación a la medida</a></li>
-                    <li><a href="#razon-7" class="is-locked-link"><span>07</span>Una agenda llena de vida</a></li>
-                    <li><a href="#razon-8" class="is-locked-link"><span>08</span>Cuatro formas de estar</a></li>
-                    <li><a href="#razon-9" class="is-locked-link"><span>09</span>Tarifa todo incluido</a></li>
-                    <li><a href="#razon-10" class="is-locked-link"><span>10</span>La familia siempre cerca</a></li>
+                    <li><a href="#razon-6"><span>06</span>Alimentación a la medida</a></li>
+                    <li><a href="#razon-7"><span>07</span>Una agenda llena de vida</a></li>
+                    <li><a href="#razon-8"><span>08</span>Cuatro formas de estar</a></li>
+                    <li><a href="#razon-9"><span>09</span>Tarifa todo incluido</a></li>
+                    <li><a href="#razon-10"><span>10</span>La familia siempre cerca</a></li>
                 </ol>
                 <div class="center"><button type="button" class="btn btn-navy" data-open-form>Cotizar ahora</button></div>
             </div>
@@ -141,14 +141,14 @@
             </div>
         </section>
 
-        <!-- MURO DE CAPTACIÓN -->
+        <!-- INVITACIÓN A DEJAR DATOS (a mitad del recorrido) -->
         <section class="gate" id="gate">
             <div class="wrap gate-inner">
                 <div class="gate-progress" aria-hidden="true"><span style="width:50%"></span></div>
-                <span class="eyebrow">Has descubierto 5 de las 10 razones</span>
-                <h2 class="gate-title">Déjanos tus datos para ver las otras 5 razones y recibir precios</h2>
-                <p class="gate-lead">Te mostramos el resto de inmediato y un asesor te contacta con la información de la sede que elijas.</p>
-                <form class="lead-form gate-form" data-lead-form data-mode="unlock" data-source="Landing Comparativa Caluce - Muro">
+                <span class="eyebrow">Vas por la mitad: 5 de 10 razones</span>
+                <h2 class="gate-title">¿Te gustaría recibir precios e información de la sede que te interesa?</h2>
+                <p class="gate-lead">Déjanos tus datos y un asesor de Calucé te contacta. Mientras tanto, sigue leyendo las otras 5 razones.</p>
+                <form class="lead-form gate-form" data-lead-form data-mode="inline" data-source="Landing Comparativa Caluce - Mitad">
                     <div class="field-row">
                         <label class="field"><span>Nombre completo</span><input type="text" name="nombre" required placeholder="Ej. Ana Gómez" autocomplete="name"></label>
                         <label class="field"><span>Celular</span><input type="tel" name="celular" required placeholder="300 123 4567" autocomplete="tel" minlength="7"></label>
@@ -166,14 +166,14 @@
                         </label>
                     </div>
                     <label class="check"><input type="checkbox" name="politica" required> <span>Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></span></label>
-                    <button type="submit" class="btn btn-lime btn-block">Sí, quiero ver las 5 razones y los precios</button>
+                    <button type="submit" class="btn btn-lime btn-block">Sí, quiero recibir precios e información</button>
                 </form>
-                <p class="gate-alt">¿Prefieres hablar con alguien? <a href="javascript:void(0)" data-open-wa>Escríbenos por WhatsApp</a></p>
+                <p class="gate-alt">¿Prefieres hablar con alguien? <a href="javascript:void(0)" data-open-wa>Escríbenos por WhatsApp</a> · <a href="#razon-6">Seguir con la razón 6</a></p>
             </div>
         </section>
 
-        <!-- RAZONES 6 a 10 (bloqueadas hasta dejar datos) -->
-        <section class="reasons reasons-locked" id="locked" aria-hidden="true">
+        <!-- RAZONES 6 a 10 -->
+        <section class="reasons reasons-second">
             <div class="wrap">
                 <article class="reason reason-alt" id="razon-6">
                     <div class="reason-media"><img src="gallery-images/IMG_8183.webp" alt="Comedor de una sede Calucé" loading="lazy"></div>
@@ -454,6 +454,6 @@
         </div>
     </div>
 
-    <script src="compara.js?v=1"></script>
+    <script src="compara.js?v=2"></script>
 </body>
 </html>

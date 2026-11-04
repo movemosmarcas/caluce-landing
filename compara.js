@@ -7,41 +7,22 @@
 
     // Tasas aproximadas usadas en index.html (TRM $4.010 y EUR $4.400).
     var RATES = { COP: 1, USD: 4010, EUR: 4400 };
-    var UNLOCK_KEY = 'caluce_compara_unlocked';
-
     var body = document.body;
 
-    // ---------- Desbloqueo de las razones 6 a 10 ----------
-    function unlock(scroll) {
-        body.classList.add('is-unlocked');
-        var locked = document.getElementById('locked');
-        if (locked) locked.removeAttribute('aria-hidden');
+    // ---------- Gracias en línea para el formulario de mitad de página ----------
+    function inlineThanks() {
         var gate = document.getElementById('gate');
-        if (gate) {
-            gate.classList.add('is-done');
-            var bar = gate.querySelector('.gate-progress span');
-            if (bar) bar.style.width = '100%';
-            var eyebrow = gate.querySelector('.eyebrow');
-            if (eyebrow) eyebrow.textContent = '¡Listo! Ya puedes ver las 10 razones';
-            var title = gate.querySelector('.gate-title');
-            if (title) title.textContent = 'Gracias, un asesor de Calucé te contactará muy pronto';
-        }
-        try { localStorage.setItem(UNLOCK_KEY, '1'); } catch (e) {}
-        if (scroll) {
-            var r6 = document.getElementById('razon-6');
-            if (r6) setTimeout(function () { r6.scrollIntoView({ behavior: 'smooth' }); }, 300);
-        }
+        if (!gate) return;
+        gate.classList.add('is-done');
+        var bar = gate.querySelector('.gate-progress span');
+        if (bar) bar.style.width = '100%';
+        var eyebrow = gate.querySelector('.eyebrow');
+        if (eyebrow) eyebrow.textContent = '¡Recibimos tus datos!';
+        var title = gate.querySelector('.gate-title');
+        if (title) title.textContent = 'Gracias, un asesor de Calucé te contactará muy pronto';
+        var r6 = document.getElementById('razon-6');
+        if (r6) setTimeout(function () { r6.scrollIntoView({ behavior: 'smooth' }); }, 1200);
     }
-    try { if (localStorage.getItem(UNLOCK_KEY) === '1') unlock(false); } catch (e) {}
-
-    // Los enlaces del índice a razones bloqueadas llevan al muro.
-    document.querySelectorAll('.is-locked-link').forEach(function (a) {
-        a.addEventListener('click', function (e) {
-            if (body.classList.contains('is-unlocked')) return;
-            e.preventDefault();
-            document.getElementById('gate').scrollIntoView({ behavior: 'smooth' });
-        });
-    });
 
     // ---------- Envío de formularios ----------
     function sendLead(form) {
@@ -86,12 +67,10 @@
                     form_source: form.dataset.source,
                     sede: new FormData(form).get('sede') || ''
                 });
-                if (form.dataset.mode === 'unlock') {
-                    btn.textContent = '¡Enviado!';
-                    unlock(true);
+                btn.textContent = '¡Enviado!';
+                if (form.dataset.mode === 'inline') {
+                    inlineThanks();
                 } else {
-                    btn.textContent = '¡Enviado!';
-                    try { localStorage.setItem(UNLOCK_KEY, '1'); } catch (e2) {}
                     setTimeout(function () { window.location.href = 'gracias.html'; }, 600);
                 }
             }).catch(function () {
